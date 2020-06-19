@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator JS</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-input">
+            <input type="text" id="input-current" autofocus>
+        </div>
+        <div class="calculator-buttons">
+            <button class="three-cell delete" onclick="cleanInput()">С</button>
+            <button class="divide" onclick="getSymbol('/')">/</button>
+            <button class="numbers" onclick="getSymbol(9)">9</button>
+            <button class="numbers" onclick="getSymbol(8)">8</button>
+            <button class="numbers" onclick="getSymbol(7)">7</button>
+            <button class="multiply" onclick="getSymbol('*')">Х</button>
+            <button class="numbers" onclick="getSymbol(6)">6</button>
+            <button class="numbers" onclick="getSymbol(5)">5</button>
+            <button class="numbers" onclick="getSymbol(4)">4</button>
+            <button class="subtract" onclick="getSymbol('-')">-</button>
+            <button class="numbers" onclick="getSymbol(3)">3</button>
+            <button class="numbers" onclick="getSymbol(2)">2</button>
+            <button class="numbers" onclick="getSymbol(1)">1</button>
+            <button class="add" onclick="getSymbol('+')">+</button>
+            <button class="two-cell numbers" onclick="getSymbol(0)">0</button>
+            <button class="dot" onclick="getSymbol('.')">.</button>
+            <button class="equal" onclick="equal()">=</button>
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
